@@ -1,20 +1,11 @@
-### Introducción
-Esta aplicación pretende gestionar los datos de colaboradores, beneficiarios y talleres que organiza una asociación. Será una herramienta útil para conocer la demanda de los beneficiaros y la disponibilidad de colaboradores que puedan atender esa demanda.
+### COPYTOM PAPELERÍA
+Esta web permitirá a los clientes del negocio hacer las compras fácil y ágilmente sin someterse a colas o aglomeraciones. Además permitiremos al usuario la posibilidad de enviar sus documentos para impresión y así evitar tiempos de espera innecesarios.
 
-### Alcance del proyectos
-# Tareas que mi proyecto llevará a cabo:
-- Permite logarse a los beneficiarios y consultar los talleres disponibles, plazas, horarios, etc.
-- Los beneficiarios podrán solicitar la matriculación en alguno de los talleres.
-- Los colaboradores podrán logarse y cambiar sus características, nuevas habilidades, modificar su disponibilidad, etc
-- Remitirá correo electrónico a los beneficiarios con los datos de la reserva que han hecho.
-- Se podrán sacar listas de los alumnos de cada taller.
-- Se podrá sacar un listado de los colaboradores que pueden impartir un taller en un horario determinado.
-- Añadir nuevos talleres, modificar los existentes.
-- Imprimirá diplomas con los datos de los alumnos.
-- Permitirá enviar correos masivos con ofertas de nuevos talleres.
-- Permitirá que los alumnos valoren cada uno de los talleres.
-* Se habilitará un blog para que los usuarios puedan realizar comentarios.
-- Se generará una memoria anual de todos los talleres realizados.
-- Permitirá establecer los recursos necesarios para cada taller
-- Controlará la preferencia de asignación de talleres en función del número de veces que ya ha disfrutado del servicio.
-- .....
+### ALCANCE:
+- Permite a los usuarios registrarse y logarse en la web
+- Permite el envío de documentación para su impresión con su previo pago a través de la web o en efectivo en el negocio.
+- Se enviarán confirmaciones por correo electrónico a los usuarios de cualquier movimiento realizado en la web con su perfil.
+- Permitirá modificar los datos de acceso de cada usuario de manera personal y de forma administrativa.
+- Permitirá localizar la ubicación del negocio de manera sencilla con un mapa indexado en la web.
+- Permitirá enviar por correo los productos adquiridos en la web.
+- Permitirá solicitar una actualización con los envíos de los productos comprados.
