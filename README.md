@@ -1,6 +1,6 @@
 # Copytom Papelería
 
-#### Curso Escolar 20XX-20XX
+#### Curso Escolar 2020-2021
 #### Autor: [Juan González Cabezuelo](https://github.com/HunterExon)
 #### Tutor: [Alejandro Leal Cruz](https://github.com/alealcruz)
 #### Fecha de Inicio: 15-03-2021
