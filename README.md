@@ -1,8 +1,8 @@
 # Copytom Papelería
 
 #### Curso Escolar 20XX-20XX
-#### Autor: [https://github.com/HunterExon](Juan González Cabezuelo)
-#### Tutor: [https://github.com/alealcruz](Alejandro Leal Cruz)
+#### Autor: [Juan González Cabezuelo](https://github.com/HunterExon)
+#### Tutor: [Alejandro Leal Cruz](https://github.com/alealcruz)
 #### Fecha de Inicio: 15-03-2021
 #### Fecha de Finalización: DD-MM-YYYY
 
@@ -17,10 +17,10 @@ Como pilar fundamental se tendrá la agilidad y la facilidad para realizar compr
 
 
 ## ENLACES CON INFORMACIÓN:
-- [](Sketch)
-- [](MockUp)
-- [](Wireframe)
-- [](Prototipo)
+- [Sketch]()
+- [MockUp]()
+- [Wireframe]()
+- [Prototipo]()
 
 ________________________________________________________________________________________________________________
 ## Estructura del Proyecto
