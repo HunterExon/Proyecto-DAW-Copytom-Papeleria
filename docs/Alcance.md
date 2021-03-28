@@ -9,3 +9,5 @@ Esta web permitirá a los clientes del negocio hacer las compras fácil y ágilm
 - Permitirá localizar la ubicación del negocio de manera sencilla con un mapa indexado en la web.
 - Permitirá enviar por correo los productos adquiridos en la web.
 - Permitirá solicitar una actualización con los envíos de los productos comprados.
+
+(Probablemente sea sujeto a cambios en el momento que se desee añadir más funcionalidades)
