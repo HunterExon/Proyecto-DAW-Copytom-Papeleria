@@ -11,7 +11,7 @@ Este sitio WEB pretende darle una ayuda a la papelería más concurrida de Tomar
 
 Esta papelería ha sido el centro de Tomares para todos los estudiantes y siempre ha tenido un alto volumen de clientela, sin embargo, está claro que los métodos tradicionales de venta no terminan de cubrir sus necesidades, por lo que es hora de llevarlo todo al siguiente nivel.
 
-###[Descripción Inicial del Proyecto](https://github.com/HunterExon/Proyecto-DAW-Copytom-Papeleria/blob/master/docs/Planificación%20Inicial/Descripción%20Inicial.pdf)
+### [Descripción Inicial del Proyecto](https://github.com/HunterExon/Proyecto-DAW-Copytom-Papeleria/blob/master/docs/Planificación%20Inicial/Descripción%20Inicial.pdf)
 
 
 ## OBJETIVO:
