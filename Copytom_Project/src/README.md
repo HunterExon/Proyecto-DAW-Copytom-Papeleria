@@ -16,3 +16,7 @@ El register también se puede probar, solo habrán de introducirse los datos en 
 
 
 (AVISO: Para cerrar sesión en la web, se deberá dejar en la barra del navegador únicamente "localhost:4200" ya que no he logrado colocarlo correctamente en otro sitio)
+
+
+
+(SI AÚN NO HAS SEGUIDO LOS PASOS EN EL ORDEN CORRECTO PARA LA INSTALACIÓN, ES DECIR LOS PREREQUISITOS PRIMERO, ACUDE DIRECTAMENTE [AQUÍ](https://github.com/HunterExon/Proyecto-DAW-Copytom-Papeleria/tree/master/Copytom_Project))
