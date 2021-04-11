@@ -4,7 +4,7 @@
 - Escribimos el código "npm install" en la propia terminal.
 - Escribimos el código "npm start" en la propia terminal.
 
-Listo, el FrontEnd debería estar lanzado sin ningún tipo de problema.
+Listo, el FrontEnd debería estar lanzado sin ningún tipo de problema. Escribimos en el navegador: "localhost:4200" y debería poder accederse a él. Una vez se tenga el BackEnd lanzado también, las funcionalidades deberían poder usarse correctamente.
 
 
 ## ÚLTIMO PASO:
