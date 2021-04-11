@@ -1,0 +1,9 @@
+.logo {
+  width: 40px;
+}
+
+.btn-success,
+.btn-outline-success:hover {
+  background-color: var(--main-color) !important;
+  border-color: #124177;
+}
