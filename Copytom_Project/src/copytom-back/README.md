@@ -11,3 +11,8 @@ Listo, el BackEnd debería estar lanzado sin ningún tipo de problema.
 ## ÚLTIMO PASO:
 Una vez realizado todo lo anterior, accederemos al siguiente puntos donde vendrá la última explicación (AVISO: Si dicho punto se realizo antes que este, no será necesario volver a entrar, pues ya estará todo listo):
   - [FrontEnd](https://github.com/HunterExon/Proyecto-DAW-Copytom-Papeleria/tree/master/Copytom_Project/src/copytom-front)
+
+
+
+
+(SI AÚN NO HAS SEGUIDO LOS PASOS EN EL ORDEN CORRECTO PARA LA INSTALACIÓN, ES DECIR LOS PREREQUISITOS PRIMERO, ACUDE DIRECTAMENTE [AQUÍ](https://github.com/HunterExon/Proyecto-DAW-Copytom-Papeleria/tree/master/Copytom_Project))
