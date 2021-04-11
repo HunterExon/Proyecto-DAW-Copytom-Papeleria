@@ -1,0 +1,58 @@
+<br><br><br><br><br>
+<div id="wrapper" class="active">
+  <div id="page-content-wrapper">
+    <div class="page-content inset">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="well lead">Búsqueda de Usuarios</p>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 contact-form">
+                <form id="contact" method="post" class="form" role="form">
+                  <div class="row">
+                    <div class="col-xs-6 col-md-3 form-group">
+                      <input class="form-control" id="inputUser" name="user" placeholder="Nombre de Usuario" type="text"
+                        required autofocus />
+                    </div>
+                  </div>
+
+                  <br />
+
+                  <!--Esto de aquí solo deberíamos vedrlo si no tenemos ningún usuario en el focus -->
+
+                  <div class="row">
+                    <div class="col-xs-12 col-md-12 form-group">
+                      <button class="btn btn-primary pull-right" type="submit">Buscar
+                        Datos</button>
+                    </div>
+                  </div>
+
+                  <!--Esto de aquí debería mostrarse solo cuando tengamos al usuario por delante, pero aún debo investigar cómo hacerlo -->
+                  <div class="row">
+                    <div class="col-xs-12 col-md-12 form-group">
+                      <button class="btn btn-primary pull-right" type="submit">Modificar
+                        Usuario</button>
+                      <button class="btn btn-primary pull-right" type="submit">Eliminar
+                        Usuario</button>
+                      <button class="btn btn-primary pull-right" type="submit">Activar
+                        Usuario</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Aún desconozco donde debo añadir el script de aquí para que funcione-->
+<script>
+  $("#menu-toggle").click(function (e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("active");
+  });
+
+</script>

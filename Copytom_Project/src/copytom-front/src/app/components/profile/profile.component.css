@@ -1,0 +1,17 @@
+.container {
+  margin-top: 80px;
+}
+
+.row {
+  background-color: #0671d6;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.row div {
+  margin: 20px 0;
+}
