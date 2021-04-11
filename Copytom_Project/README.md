@@ -36,3 +36,8 @@ Tener instaladas las siguientes aplicaciones:
 ### Creación inicial de la Base de Datos:
   - Aunque el BackEnd debería crear la base de datos por sí sola, lanzaremos esto igualmente para que no haya problemas. Cogemos [esta base de datos](https://github.com/HunterExon/Proyecto-DAW-Copytom-Papeleria/blob/master/Copytom_Project/src/copytom-back/utils/copytom.sql) y la arrastramos desde nuestro escritorio hasta el centro de la pantalla del Workbench.
   - Pulsamos en el "rayo amarillo" para ejecutar lo que viene en el enlace descargado y ya debería haberse creado la base de datos inicial de prueba. 
+
+## SIGUIENTE PASO:
+Una vez realizado todo lo anterior, accederemos a los siguientes puntos donde vendrá las próximas explicaciones:
+  - [FrontEnd](https://github.com/HunterExon/Proyecto-DAW-Copytom-Papeleria/tree/master/Copytom_Project/src/copytom-front)
+  - [BackEnd](https://github.com/HunterExon/Proyecto-DAW-Copytom-Papeleria/tree/master/Copytom_Project/src/copytom-back)
