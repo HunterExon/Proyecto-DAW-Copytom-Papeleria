@@ -1,7 +1,238 @@
 <div class="container2">
-  <div class="top">
-    <div class="signup">
-      <button class="btn btn-success" [routerLink]="['/register']">¡Regístrate!</button>
+  <div class="section1 grid">
+    <!--CONÓCENOS-->
+    <div class="about grid">
+      <h2>
+        CONÓCENOS
+      </h2>
+      <p>
+        Somos Papelería y Copistería Copytom, una empresa que le ofrece diferentes servicios en la localidad
+        de Tomares (Sevilla). Los clientes nos recomiendan por nuestra buena atención, eficacia y
+        responsabilidad. Tenemos excelentes referencias en el sector.
+        <br>
+        - Encuentre con nosotros:
+        <br>
+        - Papelería comercial.
+        <br>
+        - Útiles escolares.
+        <br>
+        Servicio de fotocopiadora.
+        <br>
+        <br>
+        En Papelería y Copistería Copytom le esperamos.
+      </p>
+      <div class="contact grid">
+        <div class="mail">
+          <a href="mailto:copytom@copytom.com">copytom@copytom.com</a>
+        </div>
+        <div class="phone">
+          <a class="nav-link" href="tel:954 151 533">954 151 533</a>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary btn2" data-toggle="modal" data-target="#horario">Horario</button>
+        <!--MODAL HORARIO-->
+        <div class="modal fade" id="horario" tabindex="-1" aria-labelledby="horario" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="horariolabel">Aviso</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="tablas">
+                  <thead>
+                      <tr>
+                          <th colspan="3">HORARIO</th>
+                      </tr>
+                      <tr>
+                          <th>DíA</th>
+                          <th>MAÑÁNA</th>
+                          <th>TARDE</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Lunes</td>
+                          <td>9:00-14:00</td>
+                          <td>15:30-18:00</td>
+                      </tr>
+                      <tr>
+                          <td>Martes</td>
+                          <td>9:00-14:00</td>
+                          <td>15:30-18:00</td>
+                      </tr>
+                      <tr>
+                          <td>Miércoles</td>
+                          <td>9:00-14:00</td>
+                          <td>15:30-18:00</td>
+                      </tr>
+                      <tr>
+                          <td>Jueves</td>
+                          <td>9:00-14:00</td>
+                          <td>15:30-18:00</td>
+                      </tr>
+                      <tr>
+                          <td>Viernes</td>
+                          <td>9:00-14:00</td>
+                          <td>15:30-18:00</td>
+                      </tr>
+                      <tr>
+                          <td>Sábado</td>
+                          <td>
+                              <p>10:30-13:30</p>
+                          </td>
+                          <td><span>CERRADO</span></td>
+                      </tr>
+                      <tr>
+                          <td>Domingo</td>
+                          <td>CERRADO</td>
+                          <td>CERRADO</td>
+                      </tr>
+                  </tbody>
+              </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--MODAL HORARIO-->
     </div>
+    <!--CONÓCENOS-->
+
+    <!--MAPA-->
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6341.288140935562!2d-6.043549!3d37.374598!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd0163c0355bf2d5c!2sCopister%C3%ADa%20y%20Papeler%C3%ADa%20Copytom!5e0!3m2!1ses!2ses!4v1611241085348!5m2!1ses!2ses"
+        width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </div>
+    <!--MAPA-->
   </div>
+  <!--FORMULARIO DE IMPRESIÓN-->
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputName4">Nombre: </label>
+        <input type="text" class="form-control" id="inputName4">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputName4">Email: </label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <input type="file" class="form-control-file" id="archivosImpresion">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="horarecogida">Hora de recogida: </label>
+        <input type="time" class="input-pers" name="horarecogida" min="17:00" max="20:00" step="600">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class class="form-group col-md-6">
+        <label for="copyNumber">Número de copias: </label>
+        <br>
+        <input type="number" name="copyNumber">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="impresionType">Tipo de Impresión: </label>
+        <select class="form-control" id="impresionType">
+          <option>A color</option>
+          <option selected>Blanco y Negro</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Díganos si solo quiere algunas páginas</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+
+    <div class="final-form">
+      <!--BOTONES DE PAGO-->
+      <button type="button" class="btn btn-primary btn2" data-toggle="modal" data-target="#pagarya">Pagar ya</button>
+      <button type="button" class="btn btn-primary btn2" data-toggle="modal" data-target="#avisotienda">Pagar en Tienda</button>
+      <!--BOTONES DE PAGO-->
+
+      <!--MODAL DE TARJETA DE CRÉDITO-->
+      <div class="modal fade" id="pagarya" tabindex="-1" aria-labelledby="pagarya" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="credit-container">
+                <div class="tips">
+                  Payment card number: (4) VISA, (51 -> 55) MasterCard, (36-38-39) DinersClub, (34-37) American
+                  Express, (65) Discover, (5019) dankort
+                </div>
+                <div class="container">
+                  <div class="col1">
+                    <div class="card">
+                      <div class="front">
+                        <div class="type">
+                          <img class="bankid" />
+                        </div>
+                        <span class="chip"></span>
+                        <span class="card_number">&#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF;
+                          &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; </span>
+                        <div class="date"><span class="date_value">MM / YYYY</span></div>
+                        <span class="fullname">NOMBRE COMPLETO</span>
+                      </div>
+                      <div class="back">
+                        <div class="magnetic"></div>
+                        <div class="bar"></div>
+                        <span class="seccode">&#x25CF;&#x25CF;&#x25CF;</span>
+                        <span class="chip"></span><span class="disclaimer">This card is property of Random Bank of
+                          Random corporation. <br> If found please return to Random Bank of Random corporation - 21968
+                          Paris, Verdi Street, 34 </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col2">
+                    <label>Número Tarjeta</label>
+                    <input class="number" type="text" ng-model="ncard" maxlength="19"
+                      onkeypress='return event.charCode >= 48 && event.charCode <= 57' />
+                    <label>Titular</label>
+                    <input class="inputname" type="text" placeholder="" />
+                    <label>Vencimiento</label>
+                    <input class="expire" type="text" placeholder="MM / YYYY" />
+                    <label>CVV</label>
+                    <input class="ccv" type="text" placeholder="CVC" maxlength="3"
+                      onkeypress='return event.charCode >= 48 && event.charCode <= 57' />
+                    <button type="submit" class="buy"><i class="material-icons">lock</i> Pay --.-- €</button>
+                    <button type="button" class="btn btn-secondary btn2" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--MODAL DE TARJETA DE CRÉDITO-->
+
+      <!--MODAL DE AVISO TIENDA-->
+      <div class="modal fade" id="avisotienda" tabindex="-1" aria-labelledby="avisotienda" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="avisotiendalabel">Aviso</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Al usar la opción de "PAGAR EN TIENDA" no comenzaremos la impresión de su documento hasta que llegue
+              presencialmente al establecimiento y diga el nombre asociado a su encargo.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary btn2" data-dismiss="modal">Cerrar</button>
+              <button type="submit" class="btn btn-primary btn2">Enviar Igualmente</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--MODAL DE AVISO TIENDA-->
+    </div>
+  </form>
+  <!--FORMULARIO DE IMPRESIÓN-->
 </div>

@@ -1,46 +1,504 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,600;1,100;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
 
-.container2 {
-  width: 100vh;
-  margin: 0 auto;
-}
 
-.top {
-  height: 43vh;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 5%;
-  margin-bottom: 1%;
+/* GRID GENERAL */
+.grid {
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 100%;
-  grid-template-areas:
-    "Singup";
+  display: grid;
+}
+/* GRID GENERAL */
+
+/* SECTION 1 */
+.section1 {
+  margin-top           : 10%;
+  grid-row         : 3;
+  grid-column      : 1;
+  grid-area            : section1;
+  grid-column     : 50% 50%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas  : "about map";
 }
 
-.signup {
-  grid-area: Singup;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.section1 .about {
+  word-wrap          : break-word;
+  grid-row       : 1;
+  grid-column    : 1;
+  grid-area          : about;
+  height             : 500px;
+  grid-template-areas: "title"
+    "data"
+    "contact";
 }
 
-.signup button {
-  width: 20%;
-  height: 20%;
-  text-transform: uppercase;
-  background-color: var(--main-color) !important;
+.section1 .about>* {
+  margin: 2%;
+}
+
+.section1 .about h2 {
+  grid-row   : 1;
+  grid-column: 1;
+  grid-area      : title;
+}
+
+.section1 .about p {
+  grid-row   : 2;
+  grid-column: 1;
+  grid-area      : data;
+}
+
+.section1 .about .contact {
+  grid-row       : 3;
+  grid-column    : 1;
+  grid-area          : contact;
+  grid-template-areas: "mail phone";
+}
+
+.section1 .about .contact .mail {
+  grid-row   : 1;
+  grid-column: 1;
+  grid-area      : mail;
+}
+
+.section1 .about .contact .phone {
+  grid-row   : 1;
+  grid-column: 2;
+  grid-area      : phone;
+  text-align     : right;
+}
+
+.section1 .map {
+  grid-row   : 1;
+  grid-column: 2;
+  grid-area      : map;
+}
+
+.section1>div {
+  margin: 6%;
+}
+/* SECTION 1 */
+
+/* CSS GENERAL */
+.container2 {
+  width : 100vh;
+  margin: 0 auto;
 }
 
 .btn {
   border-color: #124177;
 }
 
+.btn2 {
+  padding: 1%;
+}
+
 * {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+  -moz-box-sizing   : border-box;
+  box-sizing        : border-box;
+  margin            : 0;
+  padding           : 0;
+  font-family       : "Open Sans", sans-serif;
+}
+/* CSS GENERAL */
+
+/* TABLAS */
+table.tablas {
+  border         : 2px solid #635b5b;
+  width          : 100%;
+  text-align     : center;
+  border-collapse: collapse;
+}
+
+table.tablas td,
+table.tablas th {
+  border : 1px solid #635b5b;
+  padding: 3px 4px;
+}
+
+table.tablas tbody td {
+  font-size  : 13px;
+  font-weight: bold;
+}
+
+table.tablas thead {
+  background   : #635b5b;
+  border-bottom: 4px solid #333333;
+}
+
+table.tablas thead th {
+  font-size  : 15px;
+  font-weight: bold;
+  color      : #333333;
+  text-align : center;
+  border-left: 2px solid #333333;
+}
+
+table.tablas thead th:first-child {
+  border-left: none;
+}
+/* TABLAS */
+
+/* FORMULARIO */
+.form-group {
+  margin-bottom: 2%;
+}
+
+.input-pers {
+  margin-left: 1%;
+}
+
+.final-form {
+  text-align: center;
+}
+
+.final-form button {
+  margin: 2%;
+}
+/* FORMULARIO */
+
+
+/* MODALES */
+.modal-dialog {
+  margin: auto;
+}
+
+.modal-title {
+  margin-top   : auto;
+  margin-bottom: auto;
+  margin-left  : 5%;
+  color        : red;
+}
+
+.modal-body {
+  text-align: left;
+  padding   : 5%;
+}
+
+.modal-header{
+  text-align: left;
+  padding   : 5%;
+} 
+* {
+  margin    : 0;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  --card-color: #cacaca;
+  --text-color: #e1e1e1;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.tips {
+  position   : fixed;
+  bottom     : 0;
+  width      : 100%;
+  height     : 30px;
+  background : #f1f1f1;
+  line-height: 30px;
+  font-size  : 14px;
+  padding    : 2px 15px;
+}
+
+.container {
+  position      : absolute;
+  display       : flex;
+  flex-direction: row;
+  align-items   : center;
+  margin        : auto;
+  top           : 0;
+  bottom        : 0;
+  left          : 0;
+  right         : 0;
+  width         : 680px;
+}
+
+.container .col1 {
+  perspective    : 1000;
+  transform-style: preserve-3d;
+}
+
+.container .col1 .card {
+  position       : relative;
+  width          : 420px;
+  height         : 250px;
+  margin-bottom  : 85px;
+  margin-right   : 10px;
+  border-radius  : 17px;
+  box-shadow     : 0 5px 20px -5px rgba(0, 0, 0, 0.1);
+  transition     : all 1s;
+  transform-style: preserve-3d;
+}
+
+.container .col1 .card .front {
+  position                   : absolute;
+  background                 : var(--card-color);
+  border-radius              : 17px;
+  padding                    : 50px;
+  width                      : 100%;
+  height                     : 100%;
+  transform                  : translateZ(1px);
+  -webkit-transform          : translateZ(1px);
+  transition                 : background 0.3s;
+  z-index                    : 50;
+  background-image           : repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-linear-gradient(-245deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);
+  -webkit-backface-visibility: hidden;
+  backface-visibility        : hidden;
+}
+
+.container .col1 .card .front .type {
+  position: absolute;
+  width   : 75px;
+  height  : 45px;
+  top     : 20px;
+  right   : 20px;
+}
+
+.container .col1 .card .front .type img {
+  width: 100%;
+  float: right;
+}
+
+.container .col1 .card .front .card_number {
+  position      : absolute;
+  font-size     : 26px;
+  font-weight   : 500;
+  letter-spacing: -1px;
+  top           : 110px;
+  color         : var(--text-color);
+  word-spacing  : 3px;
+  transition    : color 0.5s;
+}
+
+.container .col1 .card .front .date {
+  position  : absolute;
+  bottom    : 40px;
+  right     : 55px;
+  width     : 90px;
+  height    : 35px;
+  color     : var(--text-color);
+  transition: color 0.5s;
+}
+
+.container .col1 .card .front .date .date_value {
+  font-size  : 12px;
+  position   : absolute;
+  margin-left: 22px;
+  margin-top : 12px;
+  color      : var(--text-color);
+  font-weight: 500;
+  transition : color 0.5s;
+}
+
+.container .col1 .card .front .date:after {
+  content    : "MONTH / YEAR";
+  position   : absolute;
+  display    : block;
+  font-size  : 7px;
+  margin-left: 20px;
+}
+
+.container .col1 .card .front .date:before {
+  content    : "valid \athru";
+  position   : absolute;
+  display    : block;
+  font-size  : 8px;
+  white-space: pre;
+  margin-top : 8px;
+}
+
+.container .col1 .card .front .fullname {
+  position  : absolute;
+  font-size : 20px;
+  bottom    : 40px;
+  color     : var(--text-color);
+  transition: color 0.5s;
+}
+
+.container .col1 .card .back {
+  position     : absolute;
+  width        : 100%;
+  border-radius: 17px;
+  height       : 100%;
+  background   : var(--card-color);
+  transform    : rotateY(180deg);
+}
+
+.container .col1 .card .back .magnetic {
+  position  : absolute;
+  width     : 100%;
+  height    : 50px;
+  background: rgba(0, 0, 0, 0.7);
+  margin-top: 25px;
+}
+
+.container .col1 .card .back .bar {
+  position  : absolute;
+  width     : 80%;
+  height    : 37px;
+  background: rgba(255, 255, 255, 0.7);
+  left      : 10px;
+  margin-top: 100px;
+}
+
+.container .col1 .card .back .seccode {
+  font-size  : 13px;
+  color      : var(--text-color);
+  font-weight: 500;
+  position   : absolute;
+  top        : 100px;
+  right      : 40px;
+}
+
+.container .col1 .card .back .chip {
+  bottom: 45px;
+  left  : 10px;
+}
+
+.container .col1 .card .back .disclaimer {
+  position : absolute;
+  width    : 65%;
+  left     : 80px;
+  color    : #f1f1f1;
+  font-size: 8px;
+  bottom   : 55px;
+}
+
+.container .col2 input {
+  display       : block;
+  width         : 260px;
+  height        : 30px;
+  padding-left  : 10px;
+  padding-top   : 3px;
+  padding-bottom: 3px;
+  margin        : 7px;
+  font-size     : 17px;
+  border-radius : 20px;
+  background    : rgba(0, 0, 0, 0.05);
+  border        : none;
+  transition    : background 0.5s;
+}
+
+.container .col2 input:focus {
+  outline-width: 0;
+  background   : rgba(31, 134, 252, 0.15);
+  transition   : background 0.5s;
+}
+
+.container .col2 label {
+  padding-left: 8px;
+  font-size   : 15px;
+  color       : #444;
+}
+
+.container .col2 .ccv {
+  width: 40%;
+}
+
+.container .col2 .buy {
+  width        : 260px;
+  height       : 50px;
+  position     : relative;
+  display      : block;
+  margin       : 20px auto;
+  border-radius: 10px;
+  border       : none;
+  background   : #42c2df;
+  color        : white;
+  font-size    : 20px;
+  transition   : background 0.4s;
+  cursor       : pointer;
+}
+
+.container .col2 .buy i {
+  font-size: 20px;
+}
+
+.container .col2 .buy:hover {
+  background: #3594a9;
+  transition: background 0.4s;
+}
+
+.col2 {
+  background-color: #cacaca;
+  padding         : 2%;
+  border-radius   : 10%;
+}
+
+.chip {
+  position     : absolute;
+  width        : 55px;
+  height       : 40px;
+  background   : #bbb;
+  border-radius: 7px;
+}
+
+.chip:after {
+  content      : "";
+  display      : block;
+  width        : 35px;
+  height       : 25px;
+  border-radius: 4px;
+  position     : absolute;
+  top          : 0;
+  bottom       : 0;
+  margin       : auto;
+  background   : #ddd;
+}
+/* MODALES */
+
+/* CALCULOS PARA HACER LA LETRA RESPONSIVA */
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size  : calc(1em + 1vw);
+  word-wrap  : break-word;
+}
+
+@media screen and (min-width: 50em) {
+  html {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  html {
+    font-size: 1.5em;
+  }
+}
+/* CALCULOS PARA HACER LA LETRA RESPONSIVA */
+
+@media (max-width: 768px) {
+  /* SECTION 1 */
+  .section1 {
+    grid-row         : 3;
+    grid-column      : 1;
+    grid-area            : section1;
+    grid-column     : auto;
+    grid-template-columns: auto;
+    grid-row        : auto;
+    grid-template-rows   : auto;
+    grid-template-areas  : "about"
+      "map";
+  }
+  /* SECTION 1 */
+}
+
+@media (max-width: 576px) {
+  /* SECTION 1 */
+  .section1 {
+    grid-row         : 3;
+    grid-column      : 1;
+    grid-area            : section1;
+    grid-row        : auto;
+    grid-template-rows   : auto;
+    grid-column     : auto;
+    grid-template-columns: auto;
+    grid-template-areas  : "about"
+      "map";
+  }
+  /* SECTION 1 */
 }
