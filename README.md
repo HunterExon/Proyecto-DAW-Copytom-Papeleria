@@ -26,6 +26,7 @@ Como pilar fundamental se tendrá la agilidad y la facilidad para realizar compr
 - [Casos de Uso](https://github.com/HunterExon/Proyecto-DAW-Copytom-Papeleria/blob/master/docs/Casos%20de%20Uso.pdf)
 - [Requisitos Funcionales](https://github.com/HunterExon/Proyecto-DAW-Copytom-Papeleria/blob/master/docs/Requisitos%20Funcionales.pdf)
 - [Modelo de Datos](https://github.com/HunterExon/Proyecto-DAW-Copytom-Papeleria/tree/master/docs/Modelo%20de%20Datos)
+- [Manual de Usuario](https://github.com/HunterExon/Proyecto-DAW-Copytom-Papeleria/blob/master/docs/Manual%20de%20Usuario.pdf)
 ________________________________________________________________________________________________________________
 ## Estructura del Proyecto
 
