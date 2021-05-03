@@ -102,9 +102,9 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`pedido` (
   `id_pedido` INT NOT NULL,
-  `fecha_pedido` DATETIME(45) NOT NULL,
-  `fecha_entrega` DATETIME(45) NOT NULL,
-  `fecha_envio` DATETIME(45) NOT NULL,
+  `fecha_pedido` DATETIME(6) NOT NULL,
+  `fecha_entrega` DATETIME(6) NOT NULL,
+  `fecha_envio` DATETIME(6) NOT NULL,
   `forma_envio` VARCHAR(45) NOT NULL,
   `direccion_envio` VARCHAR(45) NOT NULL,
   `nombre_destinatario` VARCHAR(45) NOT NULL,
@@ -149,9 +149,9 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `mydb`.`impresion` (
   `id_impresion` INT NOT NULL,
   `documento_adjunto` VARCHAR(45) NOT NULL,
-  `fecha_impresion` DATETIME(45) NOT NULL,
+  `fecha_impresion` DATETIME(6) NOT NULL,
   `tipo_pago` VARCHAR(45) NOT NULL,
-  `fecha_recogida` DATETIME(45) NOT NULL,
+  `fecha_recogida` DATETIME(6) NOT NULL,
   `usuario_id_user` INT NOT NULL,
   PRIMARY KEY (`id_impresion`),
   INDEX `fk_impresion_usuario1_idx` (`usuario_id_user` ASC) VISIBLE,
