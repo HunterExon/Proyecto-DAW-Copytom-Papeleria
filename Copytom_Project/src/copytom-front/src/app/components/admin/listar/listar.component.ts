@@ -22,7 +22,7 @@ export class ListarComponent implements OnInit {
   }
   Editar(user:User):void{
     localStorage.setItem("id",user.id.toString());
-    this.router.navigate(["./edit"]);
+    this.router.navigate(["./admin/edit"]);
   }
 
   Delete(user:User){
