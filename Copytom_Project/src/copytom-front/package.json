@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --proxy-config proxy.conf.json --host=0.0.0.0",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -19,6 +19,9 @@
     "@angular/platform-browser": "~11.0.0",
     "@angular/platform-browser-dynamic": "~11.0.0",
     "@angular/router": "~11.0.0",
+    "bootstrap": "^4.6.0",
+    "cors": "^2.8.5",
+    "jquery": "^3.6.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
@@ -41,5 +44,10 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.0.2"
-  }
+  },
+  "description": "- Una vez descargada la carpeta [copytom-front](https://github.com/HunterExon/Proyecto-DAW-Copytom-Papeleria/tree/master/Copytom_Project/src/copytom-front) pulsamos botón derecho sobre ella y \"Abrir con Visual Studio Code\" - Una vez abierto, simplemente nos vamos a la parte de arriba de Visual Studio y pulsamos en \"Terminal\" y \"New Terminal\". - Escribimos el código \"npm install\" en la propia terminal. - Escribimos el código \"npm install jquery\" en la propia terminal. - Escribimos el código \"npm install bootstrap\" en la propia terminal. - Escribimos el código \"npm start\" en la propia terminal.",
+  "main": "karma.conf.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
