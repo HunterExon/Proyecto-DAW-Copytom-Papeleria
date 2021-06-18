@@ -4,7 +4,7 @@
 #### Autor: [Juan González Cabezuelo](https://github.com/HunterExon)
 #### Tutor: [Alejandro Leal Cruz](https://github.com/alealcruz)
 #### Fecha de Inicio: 15-03-2021
-#### Fecha de Finalización: DD-MM-YYYY
+#### Fecha de Finalización: 18-06-2021
 
 
 ## DESCRIPCIÓN:
