@@ -2,19 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserService } from '../../services/user.service';
 
-
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css'],
 })
 export class RegisterComponent implements OnInit {
-
   name: string;
   email: string;
   pass: string;
   sesionIncorrecta: boolean;
-
   constructor(private userService: UserService, private router: Router) { }
 
   ngOnInit(): void {
@@ -24,12 +21,9 @@ export class RegisterComponent implements OnInit {
     button.addEventListener('click', function () {
       form.classList.add('form--no');
     });
-
     this.sesionIncorrecta = false;
-
   }
 
-  /* EN CONSTRUCCIÓN */
   doRegister(name: string, email: string, pass: string): void {
 
     console.log(name);
@@ -53,6 +47,5 @@ export class RegisterComponent implements OnInit {
           this.router.navigate(['/register']);
         }
       })
-
   }
 }

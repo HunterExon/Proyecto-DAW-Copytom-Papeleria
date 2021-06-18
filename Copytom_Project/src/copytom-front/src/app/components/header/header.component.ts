@@ -18,10 +18,12 @@ export class HeaderComponent implements OnInit {
       this.sesionIniciada = false;
     }
   }
+  
 
   cerrarSesion(): void {
     sessionStorage.clear();
+    localStorage.clear();
     this.ngOnInit();
-    this.router.navigate(['/inicio']);
+    this.router.navigate(['/']);
   }
 }

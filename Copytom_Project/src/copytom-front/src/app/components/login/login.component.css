@@ -28,7 +28,7 @@
   font-size: 14px;
 }
 
-.form button {
+.form .loginBtn {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
@@ -43,9 +43,9 @@
   cursor: pointer;
 }
 
-.form button:hover,
-.form button:active,
-.form button:focus {
+.form .loginBtn:hover,
+.form .loginBtn:active,
+.form .loginBtn:focus {
   background: #171a1d;
 }
 
@@ -114,6 +114,11 @@ div.form {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
 }
 
 #sesion_incorrecta {

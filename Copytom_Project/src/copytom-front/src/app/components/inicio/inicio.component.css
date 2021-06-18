@@ -100,6 +100,20 @@
   padding           : 0;
   font-family       : "Open Sans", sans-serif;
 }
+
+.section1 .about, form, .map, iframe {
+  background-color: #7baeb4 ;
+  background: -webkit-linear-gradient(right, #7baeb4, #4ebea6);
+  background: -moz-linear-gradient(right, #7baeb4, #4ebea6);
+  background: -o-linear-gradient(right, #7baeb4, #4ebea6);
+  background: linear-gradient(to left, #7baeb4, #4ebea6);
+  padding: 2%;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+}
 /* CSS GENERAL */
 
 /* TABLAS */
