@@ -15,11 +15,11 @@ public class CopytomApplication implements CommandLineRunner{
 
 	public static void main(String[] args){SpringApplication.run(CopytomApplication.class, args);}
 
-	@Override
+	
 	public void run(String... args) throws Exception {
-		User user1 = new User();
-		user1.setUsername("juan");
-		user1.setPass("juan");
+		/*User user1 = new User();
+		user1.setUsername("juan2");
+		user1.setPass("juan2");
 		user1.setEmail("alum.jgonzalezc@iesalixar.org");
 		user1.setRole("admin");
 		
@@ -31,5 +31,6 @@ public class CopytomApplication implements CommandLineRunner{
 		
 		userService.save(user1);
 		userService.save(user2);
+		*/
 	}
 }
