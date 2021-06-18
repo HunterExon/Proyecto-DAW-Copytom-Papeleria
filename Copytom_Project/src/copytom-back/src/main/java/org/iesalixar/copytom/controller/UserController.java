@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = "*", allowedHeaders = "*", exposedHeaders = "Authorization")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/user")
 public class UserController {
 
@@ -59,20 +59,20 @@ public class UserController {
 	}
 
     @GetMapping("/{id}")
-    @CrossOrigin(origins = "*", allowedHeaders = "*", exposedHeaders = "Authorization")
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     public User listarId(@PathVariable("id")int id){
         return userService.listarId(id);
     }
     
     @PutMapping("/{id}")
-    @CrossOrigin(origins = "*", allowedHeaders = "*", exposedHeaders = "Authorization")
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     public User editar(@RequestBody User u,@PathVariable("id") int id){
         u.setId(id);
         return userService.edit(u);
     }
     
     @DeleteMapping("/{id}")
-    @CrossOrigin(origins = "*", allowedHeaders = "*", exposedHeaders = "Authorization")
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     public User delete(@PathVariable("id") int  id){
         return userService.delete(id);
     }
